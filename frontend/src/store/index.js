@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
-import taskStore from './modules/task.store.js';
+import productStore from './modules/product.store.js';
 
 const store = createStore({
 	strict: true,
 	modules: {
-		taskStore,
+		productStore,
 	},
 });
 
