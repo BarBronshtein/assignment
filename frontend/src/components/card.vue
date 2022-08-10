@@ -4,7 +4,7 @@
 			<img :src="product.src" />
 		</div>
 		<h3>Price:${{ product.price }}</h3>
-		<p>{{ product.description }}</p>
+		<p>{{ product.title }}</p>
 		<action-btn>ADD TO CART</action-btn>
 	</div>
 </template>
