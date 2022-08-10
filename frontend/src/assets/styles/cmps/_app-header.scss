@@ -18,3 +18,20 @@
 		color: rgb(204, 204, 204);
 	}
 }
+@media screen and (max-width: 480px) {
+	.app-header {
+		.header-nav {
+			a {
+				font-size: 0.8rem;
+				margin-inline-end: 0.5rem;
+			}
+		}
+		.header-cart-link {
+			font-size: 0.8rem;
+			margin-inline-end: 0.3rem;
+			:first-child {
+				margin-inline-end: 0.3rem;
+			}
+		}
+	}
+}
