@@ -1,6 +1,6 @@
 <template>
 	<div class="icon-card flex flex-column items-center">
-		<div class="img-container">
+		<div class="img-container full">
 			<img :src="product.src" />
 		</div>
 		<h3>Price:${{ product.price }}</h3>

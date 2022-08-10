@@ -1,11 +1,13 @@
 <template>
 	<div class="headline-title">
-		<span class="title-buffer"></span>
-		<div class="flex justify-between">
-			<span> <slot></slot> </span>
-			<span
-				>My cart <span>{{ itemsCount }} items</span></span
-			>
+		<div class="title-buffer"></div>
+		<div class="main-layout">
+			<div class="flex justify-between">
+				<span> <slot></slot> </span>
+				<span
+					>My cart <span>({{ itemsCount }} items)</span></span
+				>
+			</div>
 		</div>
 	</div>
 </template>
