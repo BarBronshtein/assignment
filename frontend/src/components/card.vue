@@ -5,7 +5,9 @@
 		</div>
 		<h3>Price: ${{ product.price }}</h3>
 		<p>{{ product.title }}</p>
-		<action-btn @click="$emit('addToCart', product)">Add to cart</action-btn>
+		<action-btn v-if="!disable" @click="$emit('addToCart', product)"
+			>Add to cart</action-btn
+		>
 	</div>
 </template>
 
@@ -15,6 +17,7 @@
 		name: 'icon-product',
 		props: {
 			product: Object,
+			disable: Boolean,
 		},
 		components: { actionBtn },
 	};

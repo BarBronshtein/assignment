@@ -2,7 +2,12 @@
 	<section class="cards-list main-layout full">
 		<ul class="cards-wrapper clean-list flex justify-between">
 			<li v-for="product in products" :key="product._id">
-				<card @addToCart="addProduct" class="main-layout" :product="product" />
+				<card
+					@addToCart="addProduct"
+					:disable="disable"
+					class="main-layout"
+					:product="product"
+				/>
 			</li>
 		</ul>
 	</section>
@@ -12,7 +17,7 @@
 	import card from './card.vue';
 	export default {
 		name: 'cards-list',
-		props: { products: Array },
+		props: { products: Array, disable: Boolean },
 		components: {
 			card,
 		},

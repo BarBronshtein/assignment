@@ -2,6 +2,7 @@
 	margin: 2rem 0;
 	.cards-wrapper {
 		display: flex;
+		justify-content: space-around;
 		flex-wrap: wrap;
 		flex: 1;
 		gap: 20px;
@@ -12,8 +13,11 @@
 	}
 	.icon-card {
 		.img-container {
+			img {
+				object-fit: contain;
+			}
 			margin-bottom: 1rem;
-			min-height: 180px;
+			height: 180px;
 			max-height: 300px;
 		}
 		h3 {
