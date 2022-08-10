@@ -12,13 +12,10 @@
 	import card from './card.vue';
 	export default {
 		name: 'cards-list',
+		props: { products: Array },
 		components: {
 			card,
 		},
-		computed: {
-			products() {
-				return this.$store.getters.products;
-			},
-		},
+		computed: {},
 	};
 </script>

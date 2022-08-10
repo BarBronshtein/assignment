@@ -3,7 +3,7 @@
 		<div class="hero img-container full"></div>
 		<headline-title class="full">Our Products</headline-title>
 		<div class="underline full"></div>
-		<cards-list />
+		<cards-list :products="products" />
 	</section>
 </template>
 
@@ -15,6 +15,11 @@
 		components: {
 			cardsList,
 			headlineTitle,
+		},
+		computed: {
+			products() {
+				return this.$store.getters.products;
+			},
 		},
 	};
 </script>
