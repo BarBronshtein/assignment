@@ -13,8 +13,8 @@
 
 @function set-text-color($color) {
 	@if (lightness($color) >50) {
-		@return #000;
+		@return $primary-color;
 	} @else {
-		@return #fff;
+		@return $light-color;
 	}
 }

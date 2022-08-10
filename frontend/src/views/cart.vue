@@ -1,5 +1,5 @@
 <template>
-	<section class="home">
+	<section class="cart">
 		<cards-list />
 	</section>
 </template>
@@ -8,11 +8,9 @@
 	import cardsList from '../components/cards-list.vue';
 
 	export default {
-		name: 'home',
+		name: 'cart',
 		components: {
 			cardsList,
 		},
 	};
 </script>
-
-<style></style>
