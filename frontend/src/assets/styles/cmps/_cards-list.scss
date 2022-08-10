@@ -1,0 +1,10 @@
+.card-list {
+	&-wrraper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.icon-card {
+		border: 1px solid $info-color;
+		border-radius: 3px;
+	}
+}

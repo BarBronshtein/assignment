@@ -5,7 +5,7 @@
 		</div>
 		<h3>Price:${{ product.price }}</h3>
 		<p>{{ product.title }}</p>
-		<action-btn>ADD TO CART</action-btn>
+		<action-btn>Add to cart</action-btn>
 	</div>
 </template>
 

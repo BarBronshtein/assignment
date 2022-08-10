@@ -1,5 +1,5 @@
 <template>
-	<button class="action-btn">
+	<button class="btn-dark action-btn">
 		<slot></slot>
 	</button>
 </template>
