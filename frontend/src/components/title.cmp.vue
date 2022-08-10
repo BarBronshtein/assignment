@@ -17,7 +17,7 @@
 		name: 'headline-title',
 		computed: {
 			itemsCount() {
-				this.$store.getters.items?.length;
+				return this.$store.getters.cartItems?.length || 0;
 			},
 		},
 	};

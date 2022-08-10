@@ -51,10 +51,10 @@
 		},
 		computed: {
 			itemsCount() {
-				return this.$store.getters.items?.length || 0;
+				return this.$store.getters.cartItems?.length || 0;
 			},
 			itemsSumPrice() {
-				return this.$store.getters.itemsSum;
+				return this.$store.getters.cartSum || 0;
 			},
 		},
 	};
