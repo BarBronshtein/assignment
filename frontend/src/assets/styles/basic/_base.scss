@@ -20,37 +20,37 @@ a {
 }
 
 // Buttons
-// %btn-shared{
-//   display: inline-block;
-//   border: none;
-//   transition: all $btn-transition;
-//   cursor: pointer;
-// }
+%btn-shared {
+	display: inline-block;
+	border: none;
+	transition: all $btn-transition;
+	cursor: pointer;
+}
 
-// .btn {
-// 	&-primary,
-// 	&-secondary,
-// 	&-dark,
-// 	&-light {
-// 		@extend %btn-shared;
-// 	}
-//   &-primary{
-//     background-color: $primary-color;
-//     color: set-text-color($primary-color);
-//   }
-//   &-secondary{
-//     background-color: $secondary-color;
-//     color: set-text-color($secondary-color);
-//   }
-//   &-dark{
-//     background-color: $dark-color;
-//     color: set-text-color($dark-color);
-//   }
-//   &-light{
-//     background-color: $light-color;
-//     color: set-text-color($light-color);
-//   }
-// }
+.btn {
+	&-primary,
+	&-secondary,
+	&-dark,
+	&-light {
+		@extend %btn-shared;
+	}
+	&-primary {
+		background-color: $primary-color;
+		color: set-text-color($primary-color);
+	}
+	&-secondary {
+		background-color: $secondary-color;
+		color: set-text-color($secondary-color);
+	}
+	&-dark {
+		background-color: $dark-color;
+		color: set-text-color($dark-color);
+	}
+	&-light {
+		background-color: $light-color;
+		color: set-text-color($light-color);
+	}
+}
 
 // Backgrounds
 // .bg {
