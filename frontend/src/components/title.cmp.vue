@@ -1,5 +1,5 @@
 <template>
-	<div class="title">
+	<div class="headline-title">
 		<span class="title-buffer"></span>
 		<div class="flex justify-between">
 			<span> <slot></slot> </span>
@@ -12,7 +12,7 @@
 
 <script>
 	export default {
-		name: 'title',
+		name: 'headline-title',
 		computed: {
 			itemsCount() {
 				this.$store.getters.items?.length;

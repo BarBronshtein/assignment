@@ -7,16 +7,18 @@ body {
 	font-family: 'Roboto-Regular';
 	background-color: $light-color;
 	color: set-text-color($light-color);
+	min-height: 100vh;
 }
 
 img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 // Buttons

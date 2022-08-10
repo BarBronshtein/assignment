@@ -1,0 +1,20 @@
+.app-header {
+	background-color: $primary-color;
+	color: set-text-color($primary-color);
+	text-transform: uppercase;
+	.header-nav {
+		a {
+			margin-inline-end: 2rem;
+			padding: 1rem 0;
+		}
+	}
+	.header-cart-link {
+		margin-inline-end: 0.5rem;
+		:first-child {
+			margin-inline-end: 0.5rem;
+		}
+	}
+	.header-price {
+		color: rgb(204, 204, 204);
+	}
+}
