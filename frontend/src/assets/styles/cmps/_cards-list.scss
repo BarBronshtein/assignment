@@ -1,10 +1,30 @@
-.card-list {
-	&-wrraper {
+.cards-list {
+	margin: 2rem 0;
+	.cards-wrapper {
 		display: flex;
 		flex-wrap: wrap;
+		flex: 1;
+		li {
+			width: 33%;
+			border-radius: 3px;
+		}
 	}
 	.icon-card {
-		border: 1px solid $info-color;
+		.img-container {
+			margin-bottom: 1rem;
+		}
+		h3 {
+			margin-bottom: 1rem;
+			color: $secondary-color2;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+		.action-btn {
+			padding: 0.6rem;
+			width: fit-content;
+		}
 		border-radius: 3px;
+		border: 1px solid $info-color;
 	}
 }

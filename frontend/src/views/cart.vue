@@ -1,6 +1,6 @@
 <template>
 	<section class="cart main-layout">
-		<h1>Your Products</h1>
+		<h1>Your Cart</h1>
 		<cards-list />
 	</section>
 </template>
