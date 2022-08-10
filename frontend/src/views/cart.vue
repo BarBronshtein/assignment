@@ -11,6 +11,11 @@
 
 	export default {
 		name: 'cart',
+		computed:{
+			cartItems(){
+				return this.$store.getters.cartItems
+			},
+		},
 		components: {
 			cardsList,
 			title,

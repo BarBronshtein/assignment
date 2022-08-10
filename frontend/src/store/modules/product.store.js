@@ -2,7 +2,7 @@ import { productService } from '../../services/product.service.js';
 
 export default {
 	state: {
-		products: null,
+		products: [],
 		filterBy: {},
 		isLoading: false,
 	},
@@ -15,9 +15,6 @@ export default {
 		},
 		filterBy(state) {
 			return state.filterBy;
-		},
-		productWorker(state) {
-			return state.productWorker;
 		},
 	},
 	mutations: {
