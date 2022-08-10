@@ -1,7 +1,7 @@
 <template>
 	<div class="icon-card flex flex-column items-center">
-		<div class="img-container full">
-			<img :src="product.src" />
+		<div class="img-container">
+			<img :src="product.imgSRC" />
 		</div>
 		<h3>Price: ${{ product.price }}</h3>
 		<p>{{ product.title }}</p>

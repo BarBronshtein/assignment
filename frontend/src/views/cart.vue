@@ -1,6 +1,6 @@
 <template>
 	<section class="cart main-layout">
-		<title>Your Products</title>
+		<h1>Your Cart</h1>
 		<cards-list />
 	</section>
 </template>
@@ -12,8 +12,8 @@
 	export default {
 		name: 'cart',
 		computed:{
-			cartItems(){
-				return this.$store.getters.cartItems
+			cartProducts(){
+				return this.$store.getters.cartItems.map(item=>item.product)
 			},
 		},
 		components: {
