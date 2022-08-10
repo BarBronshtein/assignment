@@ -3,7 +3,7 @@
 		<div class="hero img-container full"></div>
 		<headline-title class="full">Our Products</headline-title>
 		<div class="underline full"></div>
-		<cards-list :products="products" />
+		<cards-list @addToCart="addProduct" :products="products" />
 	</section>
 </template>
 
@@ -19,6 +19,11 @@
 		computed: {
 			products() {
 				return this.$store.getters.products;
+			},
+		},
+		methods: {
+			addProduct(product) {
+				this.$store.commit({ type: 'addProductToCart', product });
 			},
 		},
 	};

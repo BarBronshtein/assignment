@@ -2,7 +2,7 @@
 	<section class="cards-list main-layout full">
 		<ul class="cards-wrapper clean-list flex justify-between">
 			<li v-for="product in products" :key="product._id">
-				<card class="main-layout" :product="product" />
+				<card @addToCart="addProduct" class="main-layout" :product="product" />
 			</li>
 		</ul>
 	</section>
@@ -16,6 +16,10 @@
 		components: {
 			card,
 		},
-		computed: {},
+		methods: {
+			addProduct(product) {
+				this.$emit('addToCart', product);
+			},
+		},
 	};
 </script>

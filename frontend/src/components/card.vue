@@ -3,9 +3,9 @@
 		<div class="img-container full">
 			<img :src="product.src" />
 		</div>
-		<h3>Price:${{ product.price }}</h3>
+		<h3>Price: ${{ product.price }}</h3>
 		<p>{{ product.title }}</p>
-		<action-btn>Add to cart</action-btn>
+		<action-btn @click="$emit('addToCart', product)">Add to cart</action-btn>
 	</div>
 </template>
 
