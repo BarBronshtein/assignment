@@ -1,15 +1,7 @@
 <template>
 	<section class="home main-layout">
 		<img src="" class="full" />
-		<div class="title">
-			<span class="title-buffer"></span>
-			<div class="flex justify-between">
-				<span>Our Products</span>
-				<span
-					>My cart <span>{{ itemsCount }} items</span></span
-				>
-			</div>
-		</div>
+		<title class="full">Our Products</title>
 		<div class="underline full"></div>
 		<cards-list />
 	</section>
@@ -17,16 +9,12 @@
 
 <script>
 	import cardsList from '../components/cards-list.vue';
-
+	import title from '../components/title.cmp.vue';
 	export default {
 		name: 'home',
 		components: {
 			cardsList,
-		},
-		computed: {
-			itemsCount() {
-				this.$store.getters.items?.length;
-			},
+			title,
 		},
 	};
 </script>
