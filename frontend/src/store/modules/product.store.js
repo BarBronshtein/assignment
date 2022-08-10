@@ -3,7 +3,7 @@ import { productService } from '../../services/product.service.js';
 export default {
 	state: {
 		products: null,
-		filterBy: null,
+		filterBy: {},
 		isLoading: false,
 	},
 	getters: {
@@ -46,7 +46,7 @@ export default {
 		async loadProducts({ commit, state }) {
 			commit({ type: 'setIsLoading', isLoading: true });
 			try {
-				var products = await productService.query(state.filterBy);
+				const products = await productService.query(state.filterBy);
 				commit({ type: 'setProducts', products });
 			} catch (err) {
 				console.error('Cannot Load products', err);

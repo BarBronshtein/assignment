@@ -18,6 +18,7 @@ async function query(filterBy) {
     }
     return products;
   } catch (err) {
+    console.log(err);
     logger.error('cannot find products', err);
     throw err;
   }

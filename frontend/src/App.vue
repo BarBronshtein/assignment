@@ -8,5 +8,9 @@
 	export default {
 		// components: { appHeader },
 		name: 'app',
+	async	created(){
+		await this.$store.dispatch('loadProducts')
+			console.log(this.$store.getters.products);
+		}
 	};
 </script>
