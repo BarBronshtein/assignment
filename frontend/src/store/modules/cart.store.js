@@ -10,7 +10,7 @@ export default {
 		},
 		cartSum(state) {
 			return state.currCart.reduce(
-				(acc, prod) => acc + prod.price * prod.quantity,
+				(acc, { product, quantity }) => acc + product.price * quantity,
 				0
 			);
 		},
