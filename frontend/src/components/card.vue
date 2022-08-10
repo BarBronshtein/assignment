@@ -1,18 +1,21 @@
 <template>
 	<div class="icon-card flex flex-column items-center">
 		<div class="img-container">
-			<img :src="card.iconSrc" alt="" />
+			<img :src="product.src" />
 		</div>
-		<h3>{{ card.title }}</h3>
-		<p>{{ card.subTitle }}</p>
+		<h3>Price:${{ product.price }}</h3>
+		<p>{{ product.description }}</p>
+		<action-btn>ADD TO CART</action-btn>
 	</div>
 </template>
 
 <script>
+	import actionBtn from './action-btn.vue';
 	export default {
-		name: 'icon-card',
+		name: 'icon-product',
 		props: {
-			card: Object,
+			product: Object,
 		},
+		components: { actionBtn },
 	};
 </script>
