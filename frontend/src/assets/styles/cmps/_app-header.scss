@@ -1,0 +1,24 @@
+.main-header {
+	background-color: $primary-color;
+
+	&__inner {
+		margin-block-end: rem(72px);
+
+		.logo-wrapper {
+			img {
+				width: rem(176px);
+			}
+		}
+
+		.header-nav {
+			.header-link {
+				color: $light-color;
+				font-size: 1rem;
+				margin-inline-end: rem(57px);
+				&:last-of-type {
+					margin-inline-end: 0;
+				}
+			}
+		}
+	}
+}
