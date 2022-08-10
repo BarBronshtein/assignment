@@ -1,12 +1,10 @@
 <template>
 	<section class="cards-list main-layout full">
-		<div class="cards-list__inner flex flex-column items-center justify-center">
-			<ul class="cards__wrapper clean-list flex items-center justify-between">
-				<li v-for="product in products" :key="product.id">
-					<product :product="product" />
-				</li>
-			</ul>
-		</div>
+		<ul class="cards-wrapper clean-list flex justify-between">
+			<li v-for="product in products" :key="product.id">
+				<product :product="product" />
+			</li>
+		</ul>
 	</section>
 </template>
 
