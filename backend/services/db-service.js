@@ -8,7 +8,7 @@ module.exports = {
 };
 
 // Database name
-const dbName = 'app_db';
+const dbName = 'product_db';
 
 let dbConn = null;
 
@@ -18,7 +18,7 @@ async function getCollection(collectionName) {
     const collection = await db.collection(collectionName);
     return collection;
   } catch (err) {
-    logger.error('Faile to get Mongo collection', err);
+    logger.error('Failed to get Mongo collection', err);
     throw err;
   }
 }
