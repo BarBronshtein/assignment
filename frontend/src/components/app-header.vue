@@ -13,7 +13,7 @@
 			</div>
 			<div class="header-cart">
 				<roter-link to="/cart" class="header-cart-link">
-					<span class="header-cart-logo"></span>
+					<span class="fa-solid fa-cart-shopping"></span>
 					<span>{{ itemsCount }}</span>
 				</roter-link>
 				<span class="header-price"> - {{ itemsSumPrice }}</span>
@@ -32,17 +32,17 @@
 						id: 'r001',
 						title: '',
 						path: '/',
-						class: 'home-logo',
+						class: 'fa-solid fa-house-chimney',
 					},
 					{
 						id: 'r002',
-						title: 'team',
+						title: 'About us',
 						path: '/',
 						class: '',
 					},
 					{
 						id: 'r003',
-						title: 'sign in',
+						title: 'Contact us',
 						path: '/',
 						class: '',
 					},
