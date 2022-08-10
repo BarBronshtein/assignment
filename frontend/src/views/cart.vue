@@ -6,14 +6,14 @@
 </template>
 
 <script>
-	import title from '../components/title.cmp.vue';
+	import headlineTitle from '../components/title.cmp.vue';
 	import cardsList from '../components/cards-list.vue';
 
 	export default {
 		name: 'cart',
 		components: {
 			cardsList,
-			title,
+			headlineTitle,
 		},
 	};
 </script>

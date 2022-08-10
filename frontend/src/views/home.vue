@@ -1,7 +1,7 @@
 <template>
 	<section class="home main-layout">
 		<div class="img-container full"></div>
-		<title class="full">Our Products</title>
+		<headline-title class="full">Our Products</headline-title>
 		<div class="underline full"></div>
 		<cards-list />
 	</section>
@@ -9,12 +9,12 @@
 
 <script>
 	import cardsList from '../components/cards-list.vue';
-	import title from '../components/title.cmp.vue';
+	import headlineTitle from '../components/title.cmp.vue';
 	export default {
 		name: 'home',
 		components: {
 			cardsList,
-			title,
+			headlineTitle,
 		},
 	};
 </script>

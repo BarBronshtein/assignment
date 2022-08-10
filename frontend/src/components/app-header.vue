@@ -12,10 +12,10 @@
 				</router-link>
 			</div>
 			<div class="header-cart align-self-center">
-				<roter-link to="/cart" class="header-cart-link">
+				<router-link to="/cart" class="header-cart-link">
 					<span class="fa-solid fa-cart-shopping"></span>
 					<span>{{ itemsCount }} Item(s)</span>
-				</roter-link>
+				</router-link>
 				<span class="header-price"> - $ {{ itemsSumPrice }}</span>
 			</div>
 		</section>

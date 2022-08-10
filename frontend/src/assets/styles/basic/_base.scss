@@ -7,6 +7,7 @@ body {
 	font-family: 'Roboto-Regular';
 	background-color: $light-color;
 	color: set-text-color($light-color);
+	min-height: 100vh;
 }
 
 img {
