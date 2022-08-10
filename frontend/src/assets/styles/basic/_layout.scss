@@ -11,7 +11,7 @@
 	}
 
 	@include for-mobile-layout {
-		grid-template-columns: 1fr 375px 1fr;
+		grid-template-columns: 5px 1fr 5px;
 	}
 }
 // Or using container
