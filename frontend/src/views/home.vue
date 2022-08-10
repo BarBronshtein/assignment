@@ -1,6 +1,6 @@
 <template>
 	<section class="home main-layout">
-		<img src="" class="full" />
+		<div class="img-container full"></div>
 		<title class="full">Our Products</title>
 		<div class="underline full"></div>
 		<cards-list />

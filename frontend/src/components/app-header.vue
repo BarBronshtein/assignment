@@ -1,7 +1,7 @@
 <template>
-	<header class="main-header main-layout full">
-		<section class="main-header__inner flex items-center justify-between">
-			<div class="header-nav flex items-center">
+	<header class="app-header main-layout full">
+		<section class="app-header__inner flex align-center justify-between">
+			<div class="header-nav flex">
 				<router-link
 					:class="['header-link', link.class]"
 					v-for="link in links"
@@ -11,12 +11,12 @@
 					{{ link.title }}
 				</router-link>
 			</div>
-			<div class="header-cart">
+			<div class="header-cart align-self-center">
 				<roter-link to="/cart" class="header-cart-link">
 					<span class="fa-solid fa-cart-shopping"></span>
-					<span>{{ itemsCount }}</span>
+					<span>{{ itemsCount }} Item(s)</span>
 				</roter-link>
-				<span class="header-price"> - {{ itemsSumPrice }}</span>
+				<span class="header-price"> - $ {{ itemsSumPrice }}</span>
 			</div>
 		</section>
 	</header>

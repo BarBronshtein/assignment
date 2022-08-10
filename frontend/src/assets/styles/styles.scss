@@ -1,8 +1,8 @@
 // SETUP
+@import 'setup/variables';
 @import 'setup/typography';
 @import 'setup/functions';
 @import 'setup/mixins';
-@import 'setup/variables';
 
 // BASE
 @import 'basic/base';
@@ -13,3 +13,6 @@
 @import 'cmps/app-header';
 @import 'cmps/cards-list';
 @import 'cmps/action-btn';
+
+// Views
+@import 'views/home';
